@@ -19,6 +19,11 @@ config/name="Monster_Mash"
 run/main_scene="res://Assets/Scenes/Base_scene.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=3840
+window/size/height=2160
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
