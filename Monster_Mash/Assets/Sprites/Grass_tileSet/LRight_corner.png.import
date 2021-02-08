@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Front_corner.png-0680ad07372142a5bac7a7d86c8fd6ee.stex"
+path="res://.import/LRight_corner.png-21b730e95340970de9ad7ba925da0298.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/PlaceHolders/Front_corner.png"
-dest_files=[ "res://.import/Front_corner.png-0680ad07372142a5bac7a7d86c8fd6ee.stex" ]
+source_file="res://Assets/Sprites/Grass_tileSet/LRight_corner.png"
+dest_files=[ "res://.import/LRight_corner.png-21b730e95340970de9ad7ba925da0298.stex" ]
 
 [params]
 
