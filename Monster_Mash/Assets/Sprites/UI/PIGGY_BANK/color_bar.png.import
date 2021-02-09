@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HEART.png-815e6d3fae088a678230cb8ebab94ae2.stex"
+path="res://.import/color_bar.png-423d81c73333e670ec42ee3719d26c51.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/UI/HEALTH/HEART.png"
-dest_files=[ "res://.import/HEART.png-815e6d3fae088a678230cb8ebab94ae2.stex" ]
+source_file="res://Assets/Sprites/UI/PIGGY_BANK/color_bar.png"
+dest_files=[ "res://.import/color_bar.png-423d81c73333e670ec42ee3719d26c51.stex" ]
 
 [params]
 
