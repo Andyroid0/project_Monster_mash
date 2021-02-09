@@ -1,16 +1,9 @@
 extends Node
 
+signal max_changed(new_max)
+signal changed(new_amount)
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export(int) var max_amount = 10 
+onready var current = max_amount 
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func set_max()
