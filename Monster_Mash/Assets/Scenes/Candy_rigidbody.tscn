@@ -5,6 +5,7 @@
 [sub_resource type="CircleShape2D" id=1]
 
 [node name="Candy" type="RigidBody2D"]
+gravity_scale = 0.0
 
 [node name="Sprite" type="Sprite" parent="."]
 modulate = Color( 0.262745, 1, 0.180392, 1 )
