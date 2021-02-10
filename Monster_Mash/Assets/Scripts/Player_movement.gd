@@ -14,24 +14,25 @@ func SkillLoop():
 	var CANDY_SPEED = 450
 	if Input.get_action_strength("Shoot_right"):
 		var candy_instance = candy.instance()
-		get_parent().add_child(candy_instance)
-		
+		get_parent().add_child(candy_instance)		
 		shoot = shoot.normalized() * CANDY_SPEED
+		
 	if Input.get_action_strength("Shoot_left"):
 		var candy_instance = candy.instance()
-		get_parent().add_child(candy_instance)
-		
+		get_parent().add_child(candy_instance)		
 		shoot = shoot.normalized() * CANDY_SPEED
+		
 	if Input.get_action_strength("Shoot_down"):
 		var candy_instance = candy.instance()
-		get_parent().add_child(candy_instance)
-		
+		get_parent().add_child(candy_instance)		
 		shoot = shoot.normalized() * CANDY_SPEED
-	if Input.get_action_strength("Shoot_up"):
+		
+	if Input.is_action_just_pressed("Shoot_up"):
 		var candy_instance = candy.instance()
-		get_parent().add_child(candy_instance)
-		
-		shoot = shoot.normalized() * CANDY_SPEED
+		var candy_start = get_node(".").position
+		candy_instance.position = candy_start
+		get_parent().get_parent().add_child(candy_instance)			
+		shoot.y = shoot.y * CANDY_SPEED
 							
 
 const MOTION_SPEED = 400 # Pixels/second.
