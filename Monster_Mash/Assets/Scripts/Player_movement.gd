@@ -16,7 +16,9 @@ func _physics_process(_delta):
 			var candy_instance = candy.instance()
 			candy_instance.position = candy_start
 			get_parent().get_parent().add_child(candy_instance)
-			candy_instance.velocity = DIRECTIONS[i] * candy_instance.MOTION_SPEED
+			#candy_instance.velocity = DIRECTIONS[i] * MOTION_SPEED
+			candy_instance = DIRECTIONS[i] * MOTION_SPEED
+			move_and_slide(candy_instance)
 	
 	motion.x = Input.get_action_strength("Move_right") - Input.get_action_strength("Move_left")
 	motion.y = Input.get_action_strength("Move_down") - Input.get_action_strength("Move_up")
