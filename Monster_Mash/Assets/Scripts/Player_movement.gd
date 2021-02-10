@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 
 
-var candy = preload("res://Assets/Scenes/Candy.tscn")
+#var candy = preload("res://Assets/Scenes/Candy.tscn")
 
 
  
