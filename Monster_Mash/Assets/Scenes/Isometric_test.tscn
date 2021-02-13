@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Assets/Sprites/Grass_tileSet/DLeft_corner.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Sprites/Grass_tileSet/Lcenter.png" type="Texture" id=2]
@@ -16,6 +16,10 @@
 [ext_resource path="res://Assets/Sprites/Lights/spotlight.png" type="Texture" id=14]
 [ext_resource path="res://Assets/Sprites/Lights/spotlight_ground.png" type="Texture" id=15]
 [ext_resource path="res://Assets/Sprites/PlaceHolders/House_1.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Sprites/PlaceHolders/light-pole_1.png" type="Texture" id=17]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+polygon = PoolVector2Array( -368.524, -527.85, -219.942, -489.144, -196.219, -489.144, -157.512, -494.138, -41.3937, -531.596, -41.3937, -544.082, -187.479, -580.291, -216.196, -582.788, -359.784, -546.579, -373.518, -540.336 )
 
 [node name="Isometric_test" type="Node2D"]
 
@@ -24,7 +28,10 @@ modulate = Color( 0.352941, 0.360784, 0.443137, 1 )
 position = Vector2( 1446.2, 1055.77 )
 texture = ExtResource( 12 )
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="Environment" type="Node2D" parent="."]
+scale = Vector2( 0.5, 0.5 )
+
+[node name="TileMap" type="TileMap" parent="Environment"]
 modulate = Color( 0.352941, 0.360784, 0.443137, 1 )
 position = Vector2( 511.499, 385.73 )
 mode = 1
@@ -32,78 +39,79 @@ cell_size = Vector2( 79, 22 )
 cell_y_sort = true
 format = 1
 
-[node name="DBack_corner" type="Sprite" parent="TileMap"]
+[node name="DBack_corner" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 576.848, 511.502 )
 texture = ExtResource( 9 )
 
-[node name="Lmiddle_frontRight_corner" type="Sprite" parent="TileMap"]
+[node name="Lmiddle_frontRight_corner" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 1895.49, 869.251 )
 texture = ExtResource( 10 )
 
-[node name="DFront_corner" type="Sprite" parent="TileMap"]
+[node name="DFront_corner" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 1448.91, 989.514 )
 texture = ExtResource( 5 )
 
-[node name="Dcenter" type="Sprite" parent="TileMap"]
+[node name="Dcenter" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 584.558, 747.416 )
 texture = ExtResource( 3 )
 
-[node name="Dcenter2" type="Sprite" parent="TileMap"]
+[node name="Dcenter2" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 1441.57, 753.073 )
 texture = ExtResource( 3 )
 
-[node name="Lcenter" type="Sprite" parent="TileMap"]
+[node name="Lcenter" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 1020.14, 863.382 )
 texture = ExtResource( 2 )
 
-[node name="Lcenter2" type="Sprite" parent="TileMap"]
+[node name="Lcenter2" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 1011.65, 634.279 )
 texture = ExtResource( 2 )
 
-[node name="DLeft_corner" type="Sprite" parent="TileMap"]
+[node name="DLeft_corner" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( -317.711, 744.588 )
 texture = ExtResource( 1 )
 
-[node name="Lmiddle_edge" type="Sprite" parent="TileMap"]
+[node name="Lmiddle_edge" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 129.181, 863.381 )
 texture = ExtResource( 8 )
 
-[node name="Dmiddle_edge" type="Sprite" parent="TileMap"]
+[node name="Dmiddle_edge" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 576.072, 982.176 )
 texture = ExtResource( 7 )
 
-[node name="LRight_corner" type="Sprite" parent="TileMap"]
+[node name="LRight_corner" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 1022.96, 1100.97 )
 texture = ExtResource( 6 )
 
-[node name="LBack_corner" type="Sprite" parent="TileMap"]
+[node name="LBack_corner" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 129.181, 628.622 )
 texture = ExtResource( 4 )
 
-[node name="house" type="Sprite" parent="TileMap"]
+[node name="house" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 1020.69, -52.6648 )
 texture = ExtResource( 16 )
 
-[node name="house2" type="Sprite" parent="TileMap"]
+[node name="house2" type="Sprite" parent="Environment/TileMap"]
 modulate = Color( 1, 0.411765, 0.411765, 1 )
 position = Vector2( 1596.04, 109.152 )
 texture = ExtResource( 16 )
 
-[node name="house3" type="Sprite" parent="TileMap"]
+[node name="house3" type="Sprite" parent="Environment/TileMap"]
 modulate = Color( 0.258824, 1, 0.478431, 1 )
 position = Vector2( 2210.34, 285.953 )
 texture = ExtResource( 16 )
 
-[node name="Lights" type="Node2D" parent="."]
+[node name="light-pole_1" type="Sprite" parent="Environment/TileMap"]
+position = Vector2( -53.2785, 265.413 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 17 )
 
-[node name="Light2D" type="Light2D" parent="Lights"]
-position = Vector2( 1139.86, 1057.83 )
-texture = ExtResource( 11 )
-color = Color( 1, 0.8, 0.490196, 1 )
-shadow_enabled = true
-shadow_gradient_length = 20.0
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Environment/TileMap/light-pole_1"]
+occluder = SubResource( 1 )
 
-[node name="Light2D2" type="Light2D" parent="Lights"]
+[node name="Lights" type="Node2D" parent="Environment"]
+
+[node name="magenta_light" type="Light2D" parent="Environment/Lights"]
 position = Vector2( 1057.24, 772.691 )
 texture = ExtResource( 11 )
 color = Color( 0.94902, 0.0784314, 1, 1 )
@@ -111,47 +119,58 @@ energy = 1.86
 shadow_enabled = true
 shadow_gradient_length = 20.0
 
-[node name="Light2D4" type="Light2D" parent="Lights"]
-position = Vector2( 2301.03, 1043.05 )
-texture = ExtResource( 11 )
-color = Color( 0.0784314, 1, 0.717647, 1 )
-energy = 1.86
-shadow_enabled = true
-shadow_gradient_length = 20.0
-
-[node name="Light2D5" type="Light2D" parent="Lights"]
-visible = false
+[node name="window_light" type="Light2D" parent="Environment/Lights"]
 position = Vector2( 1283.07, 448.443 )
 texture = ExtResource( 11 )
 color = Color( 1, 0.639216, 0.0784314, 1 )
 energy = 1.86
 shadow_enabled = true
 
-[node name="Light2D3" type="Light2D" parent="Lights"]
-position = Vector2( 147.078, 1100.26 )
+[node name="window_light3" type="Light2D" parent="Environment/Lights"]
+position = Vector2( 2451.4, 721.476 )
 texture = ExtResource( 11 )
-color = Color( 0.843137, 1, 0.0784314, 1 )
-energy = 1.47
+color = Color( 1, 0.639216, 0.0784314, 1 )
+energy = 1.86
 shadow_enabled = true
 
-[node name="Light2D6" type="Light2D" parent="Lights"]
-position = Vector2( 1721.97, 746.822 )
-scale = Vector2( 1.40321, 1.0369 )
+[node name="magenta_light2" type="Light2D" parent="Environment/Lights"]
+position = Vector2( 2362.08, 1099.7 )
+texture = ExtResource( 11 )
+color = Color( 0.94902, 0.0784314, 1, 1 )
+energy = 1.86
+shadow_enabled = true
+shadow_gradient_length = 20.0
+
+[node name="window_light2" type="Light2D" parent="Environment/Lights"]
+position = Vector2( 1845.01, 521.463 )
+texture = ExtResource( 11 )
+color = Color( 1, 0.639216, 0.0784314, 1 )
+energy = 1.86
+shadow_enabled = true
+
+[node name="streetlamp_cast" type="Light2D" parent="Environment/Lights"]
+position = Vector2( 298.259, 809.818 )
+scale = Vector2( 0.3, 0.5 )
 texture = ExtResource( 14 )
 color = Color( 0.952941, 0.627451, 0.25098, 1 )
 energy = 3.95
 mode = 2
 shadow_color = Color( 0.435294, 0.513726, 0.956863, 0 )
 
-[node name="Light2D7" type="Light2D" parent="Lights"]
-position = Vector2( 1526.94, 1298.62 )
-scale = Vector2( 0.75, 0.75 )
+[node name="streetlamp_ground" type="Light2D" parent="Environment/Lights"]
+position = Vector2( 279.618, 1066.79 )
+scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 15 )
 color = Color( 1, 0.654902, 0.321569, 1 )
 energy = 2.86
 shadow_enabled = true
 shadow_color = Color( 0.137255, 0.180392, 0.45098, 0 )
 shadow_gradient_length = 20.0
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Environment"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/StaticBody2D"]
+polygon = PoolVector2Array( 1093.66, 755.548, 1098.7, 496.004, 2900.39, 997.453, 2902.91, 1249.44 )
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 13 )]
 modulate = Color( 0.309804, 0.301961, 0.435294, 1 )
