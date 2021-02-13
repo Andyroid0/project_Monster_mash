@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/health_white_bracket.png-46bfc6aba9ec9e756369448002f7f061.stex"
+path="res://.import/light-pole_2.png-37b4acfb0b48c2cef58d58ff8f04d1fd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/UI/Health/health_white_bracket.png"
-dest_files=[ "res://.import/health_white_bracket.png-46bfc6aba9ec9e756369448002f7f061.stex" ]
+source_file="res://Assets/Sprites/PlaceHolders/light-pole_2.png"
+dest_files=[ "res://.import/light-pole_2.png-37b4acfb0b48c2cef58d58ff8f04d1fd.stex" ]
 
 [params]
 
