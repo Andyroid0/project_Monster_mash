@@ -1,12 +1,11 @@
 extends Node2D
 
 
-onready var player_detector = $PLayerDetector
+onready var health_stat = $Health 
+onready var ai = $AI 
 
-enum {
-	PATROL,
-	ENGAGE
-}
+func handle_hit():
+	health_stat.health -= 20 
+	if health_stat.health <= 0:
+		queue_free()
 
-func _on_PlayerDetector_body_entered(body):
-	pass # Replace with function body.
