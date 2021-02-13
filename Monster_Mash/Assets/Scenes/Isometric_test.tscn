@@ -21,7 +21,7 @@
 
 [node name="BG_purple_desat" type="Sprite" parent="."]
 modulate = Color( 0.352941, 0.360784, 0.443137, 1 )
-position = Vector2( 1446.2, 1056.77 )
+position = Vector2( 1446.2, 1055.77 )
 texture = ExtResource( 12 )
 
 [node name="TileMap" type="TileMap" parent="."]
