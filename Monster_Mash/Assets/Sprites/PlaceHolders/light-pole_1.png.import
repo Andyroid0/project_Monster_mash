@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HEART.png-815e6d3fae088a678230cb8ebab94ae2.stex"
+path="res://.import/light-pole_1.png-6ce4e2267f25e03d7fc92b031d1d901d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/UI/HEALTH/HEART.png"
-dest_files=[ "res://.import/HEART.png-815e6d3fae088a678230cb8ebab94ae2.stex" ]
+source_file="res://Assets/Sprites/PlaceHolders/light-pole_1.png"
+dest_files=[ "res://.import/light-pole_1.png-6ce4e2267f25e03d7fc92b031d1d901d.stex" ]
 
 [params]
 
