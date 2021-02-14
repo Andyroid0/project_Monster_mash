@@ -21,7 +21,7 @@
 [sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( -368.524, -527.85, -219.942, -489.144, -196.219, -489.144, -157.512, -494.138, -41.3937, -531.596, -41.3937, -544.082, -187.479, -580.291, -216.196, -582.788, -359.784, -546.579, -373.518, -540.336 )
 
-[node name="Isometric_test" type="Node2D"]
+[node name="Scene1" type="Node2D"]
 
 [node name="BG_purple_desat" type="Sprite" parent="."]
 modulate = Color( 0.352941, 0.360784, 0.443137, 1 )
