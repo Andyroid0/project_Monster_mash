@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 
 signal state_changed(new_state)
@@ -6,9 +6,10 @@ signal state_changed(new_state)
 enum State {
 	PATROL,
 	ENGAGE
-    }
+	}
 
 onready var player_detector = $PLayerDetector
+onready var Player = preload("res:\\Monster_Mash\Assets\Scripts\Player.tscn")
 
 
 var current_state: int = State.PATROL setget set_state
