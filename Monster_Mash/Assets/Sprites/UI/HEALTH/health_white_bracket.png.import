@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/HEART.png-311daa15158778432a039235f9b75a07.stex"
+path="res://.import/health_white_bracket.png-04d6e2c985e9b69c19e34a6657a0b16e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/UI/Health/HEART.png"
-dest_files=[ "res://.import/HEART.png-311daa15158778432a039235f9b75a07.stex" ]
+source_file="res://Assets/Sprites/UI/HEALTH/health_white_bracket.png"
+dest_files=[ "res://.import/health_white_bracket.png-04d6e2c985e9b69c19e34a6657a0b16e.stex" ]
 
 [params]
 
