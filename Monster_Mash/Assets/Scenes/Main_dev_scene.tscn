@@ -167,12 +167,12 @@ shadow_enabled = true
 shadow_color = Color( 0.137255, 0.180392, 0.45098, 0 )
 shadow_gradient_length = 20.0
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Environment"]
-position = Vector2( 2, 0 )
+[node name="House_wall" type="StaticBody2D" parent="Environment" groups=[
+"house_wall",
+]]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/House_wall"]
 polygon = PoolVector2Array( 1093.66, 755.548, 1098.7, 496.004, 2900.39, 997.453, 2902.91, 1249.44 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.309804, 0.301961, 0.435294, 1 )
-position = Vector2( 1021.06, 1162.48 )
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 696.931, 583.061 )
