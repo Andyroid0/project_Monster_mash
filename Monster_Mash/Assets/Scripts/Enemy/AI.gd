@@ -3,13 +3,12 @@ extends Node
 
 signal state_changed(new_state)
 
-enum State{
+enum State {
 	PATROL,
 	ENGAGE
-}
+    }
 
 onready var player_detector = $PLayerDetector
-
 
 
 var current_state: int = State.PATROL setget set_state
@@ -22,5 +21,10 @@ func set_state(new_state: int):
 		current_state = new_state
 		emit_signal("state_changed", current_state)
 
-func _on_PlayerDetector_body_entered(body):
+func _on_PlayerDetector_body_entered(_body):
+	player = body 
 	pass # Replace with function body.
+
+func _on_PlayerDetector_body_exited(_body):
+	player = null 
+		

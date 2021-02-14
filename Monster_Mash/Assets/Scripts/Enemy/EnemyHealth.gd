@@ -14,7 +14,7 @@ func set_max(new_max):
 	max_amount = max(1, new_max)  # this is used to make sure max health never goes below zero	
 	emit_signal("max_changed", max_amount) 
 
-func set_current(new_value):
+func set_current(_new_value):
 	current = clamp(current, 0, max_amount) # current wont be below 0 and wont be above maxhealth
 	emit_signal("changed", current)
 
