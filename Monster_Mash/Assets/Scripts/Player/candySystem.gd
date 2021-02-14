@@ -15,4 +15,13 @@ func _ready():
 	yield(candy_timer, "timeout")
 	queue_free()
 
-
+func _physics_process(delta):
+	set_contact_monitor(true)
+	var bodies = get_colliding_bodies()
+	for body in bodies:
+		if body.name == "house_poly":
+			print("turd")
+			self.queue_free()
+		if body.name == "house_wall":
+			print("butt")
+			self.queue_free()
