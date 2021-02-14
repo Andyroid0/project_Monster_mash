@@ -12,11 +12,4 @@ func _process(_delta):
 			candy_instance.position = get_global_position() + DIRECTIONS[i] * 50
 			get_parent().add_child(candy_instance)
 			candy_instance.apply_impulse( Vector2(), DIRECTIONS[i] * CANDY_SPEED )
-			get_tree().get_root().call_deferred("add_child",candy_instance)
-func kill():
-	get_tree(). reload_curent_scene()
-
-func _on_Area2D_body_entered(body):
-	if "Enemy" in body.name:
-		kill()
-
+			
