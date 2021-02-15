@@ -317,12 +317,12 @@ texture = ExtResource( 18 )
 position = Vector2( 2787.72, 1588.51 )
 texture = ExtResource( 20 )
 
-[node name="light-pole_1" type="Sprite" parent="Environment/TileMap"]
-position = Vector2( -53.2785, 265.413 )
+[node name="light-pole_1" type="Sprite" parent="Environment"]
+position = Vector2( 277.201, 843.476 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 7 )
 
-[node name="LightOccluder2D" type="LightOccluder2D" parent="Environment/TileMap/light-pole_1"]
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Environment/light-pole_1"]
 occluder = SubResource( 1 )
 
 [node name="Lights" type="Node2D" parent="Environment"]
@@ -365,7 +365,7 @@ energy = 1.86
 shadow_enabled = true
 
 [node name="streetlamp_cast" type="Light2D" parent="Environment/Lights"]
-position = Vector2( 298.259, 809.818 )
+position = Vector2( 117.24, 1002.15 )
 scale = Vector2( 0.3, 0.5 )
 texture = ExtResource( 6 )
 color = Color( 0.952941, 0.627451, 0.25098, 1 )
@@ -374,7 +374,7 @@ mode = 2
 shadow_color = Color( 0.435294, 0.513726, 0.956863, 0 )
 
 [node name="streetlamp_ground" type="Light2D" parent="Environment/Lights"]
-position = Vector2( 279.618, 1066.79 )
+position = Vector2( 98.5987, 1259.12 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 3 )
 color = Color( 1, 0.654902, 0.321569, 1 )
