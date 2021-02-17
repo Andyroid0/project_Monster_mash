@@ -36,7 +36,7 @@ texture = ExtResource( 14 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="TileMap" type="TileMap" parent="Environment"]
-modulate = Color( 0.352941, 0.360784, 0.443137, 1 )
+modulate = Color( 0.345098, 0.305882, 1, 0.784314 )
 position = Vector2( 511.499, 385.73 )
 mode = 1
 cell_size = Vector2( 79, 22 )
@@ -330,7 +330,7 @@ occluder = SubResource( 1 )
 [node name="magenta_light" type="Light2D" parent="Environment/Lights"]
 position = Vector2( 1057.24, 772.691 )
 texture = ExtResource( 2 )
-color = Color( 0.94902, 0.0784314, 1, 1 )
+color = Color( 0.945098, 0, 1, 1 )
 energy = 1.86
 shadow_enabled = true
 shadow_gradient_length = 20.0
@@ -338,7 +338,7 @@ shadow_gradient_length = 20.0
 [node name="window_light" type="Light2D" parent="Environment/Lights"]
 position = Vector2( 1283.07, 448.443 )
 texture = ExtResource( 2 )
-color = Color( 1, 0.639216, 0.0784314, 1 )
+color = Color( 1, 0.607843, 0, 1 )
 energy = 1.86
 shadow_enabled = true
 
@@ -352,7 +352,7 @@ shadow_enabled = true
 [node name="magenta_light2" type="Light2D" parent="Environment/Lights"]
 position = Vector2( 2074.29, 1014.08 )
 texture = ExtResource( 2 )
-color = Color( 0.94902, 0.0784314, 1, 1 )
+color = Color( 0.945098, 0, 1, 1 )
 energy = 1.86
 shadow_enabled = true
 shadow_gradient_length = 20.0
@@ -360,7 +360,7 @@ shadow_gradient_length = 20.0
 [node name="window_light2" type="Light2D" parent="Environment/Lights"]
 position = Vector2( 1845.01, 521.463 )
 texture = ExtResource( 2 )
-color = Color( 1, 0.639216, 0.0784314, 1 )
+color = Color( 1, 0.607843, 0, 1 )
 energy = 1.86
 shadow_enabled = true
 
@@ -377,7 +377,7 @@ shadow_color = Color( 0.435294, 0.513726, 0.956863, 0 )
 position = Vector2( 98.5987, 1259.12 )
 scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 3 )
-color = Color( 1, 0.654902, 0.321569, 1 )
+color = Color( 1, 0.490196, 0, 1 )
 energy = 2.86
 shadow_enabled = true
 shadow_color = Color( 0.137255, 0.180392, 0.45098, 0 )

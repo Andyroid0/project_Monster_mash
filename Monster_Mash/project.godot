@@ -24,9 +24,8 @@ config/windows_native_icon="res://Assets/Sprites/Icons/tooth_logo.ico"
 
 [display]
 
-window/size/width=3840
-window/size/height=2160
-window/size/fullscreen=true
+window/size/width=1920
+window/size/height=1080
 
 [input]
 
