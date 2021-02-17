@@ -36,7 +36,7 @@ texture = ExtResource( 14 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="TileMap" type="TileMap" parent="Environment"]
-modulate = Color( 0.345098, 0.305882, 1, 0.784314 )
+modulate = Color( 0.345098, 0.305882, 1, 1 )
 position = Vector2( 511.499, 385.73 )
 mode = 1
 cell_size = Vector2( 79, 22 )
