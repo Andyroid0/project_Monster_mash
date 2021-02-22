@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Assets/Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Sprites/Lights/Circle_withFlare.png" type="Texture" id=2]
@@ -23,20 +23,77 @@
 [ext_resource path="res://Assets/Sprites/PlaceHolders/Street/street_tile_1.png" type="Texture" id=21]
 [ext_resource path="res://Assets/Sprites/Slime/splat2_iso.png" type="Texture" id=22]
 [ext_resource path="res://Assets/Sprites/Slime/splat_Lwall.png" type="Texture" id=23]
+[ext_resource path="res://Assets/Sprites/Trees/ghosty_tree.png" type="Texture" id=24]
 
 [sub_resource type="OccluderPolygon2D" id=1]
-polygon = PoolVector2Array( -368.524, -527.85, -219.942, -489.144, -196.219, -489.144, -157.512, -494.138, -41.3937, -531.596, -41.3937, -544.082, -187.479, -580.291, -216.196, -582.788, -359.784, -546.579, -373.518, -540.336 )
+polygon = PoolVector2Array( -284.969, -536.291, -278.295, -515.156, -236.025, -498.471, -182.631, -496.246, -144.811, -502.92, -124.788, -519.605, -128.125, -544.077, -157.047, -561.875, -217.114, -567.437, -271.62, -556.314 )
 
 [node name="Scene1" type="Node2D"]
 
 [node name="BG_purple_desat" type="Sprite" parent="."]
 modulate = Color( 0.352941, 0.360784, 0.443137, 1 )
 position = Vector2( 1446.2, 1055.77 )
+scale = Vector2( 3, 2 )
 texture = ExtResource( 14 )
 
 [node name="Environment" type="Node2D" parent="."]
 modulate = Color( 0.345098, 0.305882, 1, 1 )
 scale = Vector2( 0.5, 0.5 )
+
+[node name="ghosty_tree" type="Sprite" parent="Environment"]
+position = Vector2( -255.391, 260.853 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree2" type="Sprite" parent="Environment"]
+position = Vector2( -1190.47, 577.03 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree3" type="Sprite" parent="Environment"]
+position = Vector2( -2354.27, 859.571 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree4" type="Sprite" parent="Environment"]
+position = Vector2( 1877.12, 180.127 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree5" type="Sprite" parent="Environment"]
+position = Vector2( 2489.29, 355.033 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree6" type="Sprite" parent="Environment"]
+position = Vector2( 2139.48, 516.485 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree7" type="Sprite" parent="Environment"]
+position = Vector2( 3256.19, 455.941 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree8" type="Sprite" parent="Environment"]
+position = Vector2( 3875.09, 866.298 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree9" type="Sprite" parent="Environment"]
+position = Vector2( 4245.08, 1088.29 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree10" type="Sprite" parent="Environment"]
+position = Vector2( 4050, 516.485 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
+
+[node name="ghosty_tree11" type="Sprite" parent="Environment"]
+position = Vector2( 995.861, -82.2332 )
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 24 )
 
 [node name="TileMap" type="TileMap" parent="Environment"]
 position = Vector2( 511.499, 385.73 )
@@ -335,6 +392,7 @@ scale = Vector2( 0.3, 0.3 )
 texture = ExtResource( 7 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Environment/light-pole_1"]
+position = Vector2( 499.821, 1431.72 )
 occluder = SubResource( 1 )
 
 [node name="Lights" type="Node2D" parent="Environment"]
@@ -402,7 +460,7 @@ shadow_gradient_length = 20.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/House_wall" groups=[
 "house_poly",
 ]]
-polygon = PoolVector2Array( 1093.66, 755.548, 1098.7, 496.004, 2900.39, 997.453, 2902.91, 1249.44 )
+polygon = PoolVector2Array( 1093.66, 755.548, 1091.83, 684.902, 4625.71, 1634.66, 4618.46, 1703.26 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 696.931, 583.061 )
