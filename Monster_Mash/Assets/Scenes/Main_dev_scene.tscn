@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Assets/Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Sprites/Lights/Circle_withFlare.png" type="Texture" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://Assets/Sprites/PlaceHolders/Street/street_tile_center line.png" type="Texture" id=19]
 [ext_resource path="res://Assets/Sprites/PlaceHolders/Street/street_tile_2.png" type="Texture" id=20]
 [ext_resource path="res://Assets/Sprites/PlaceHolders/Street/street_tile_1.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Sprites/Slime/splat2_iso.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Sprites/Slime/splat_Lwall.png" type="Texture" id=23]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( -368.524, -527.85, -219.942, -489.144, -196.219, -489.144, -157.512, -494.138, -41.3937, -531.596, -41.3937, -544.082, -187.479, -580.291, -216.196, -582.788, -359.784, -546.579, -373.518, -540.336 )
@@ -33,10 +35,10 @@ position = Vector2( 1446.2, 1055.77 )
 texture = ExtResource( 14 )
 
 [node name="Environment" type="Node2D" parent="."]
+modulate = Color( 0.345098, 0.305882, 1, 1 )
 scale = Vector2( 0.5, 0.5 )
 
 [node name="TileMap" type="TileMap" parent="Environment"]
-modulate = Color( 0.345098, 0.305882, 1, 1 )
 position = Vector2( 511.499, 385.73 )
 mode = 1
 cell_size = Vector2( 79, 22 )
@@ -316,6 +318,16 @@ texture = ExtResource( 18 )
 [node name="street_tile_16" type="Sprite" parent="Environment/TileMap"]
 position = Vector2( 2787.72, 1588.51 )
 texture = ExtResource( 20 )
+
+[node name="splat2_iso" type="Sprite" parent="Environment"]
+position = Vector2( 2239.07, 1914.85 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 22 )
+
+[node name="splat_Lwall" type="Sprite" parent="Environment"]
+position = Vector2( 3193.59, 1075.46 )
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 23 )
 
 [node name="light-pole_1" type="Sprite" parent="Environment"]
 position = Vector2( 277.201, 843.476 )
