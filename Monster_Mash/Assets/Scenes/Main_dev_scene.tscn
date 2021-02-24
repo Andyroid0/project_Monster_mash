@@ -38,7 +38,7 @@ texture = ExtResource( 14 )
 
 [node name="Environment" type="Node2D" parent="."]
 modulate = Color( 0.345098, 0.305882, 1, 1 )
-scale = Vector2( 0.5, 0.5 )
+scale = Vector2( 0.25, 0.25 )
 
 [node name="ghosty_tree" type="Sprite" parent="Environment"]
 position = Vector2( -255.391, 260.853 )
@@ -463,4 +463,4 @@ shadow_gradient_length = 20.0
 polygon = PoolVector2Array( 1093.66, 755.548, 1091.83, 684.902, 4625.71, 1634.66, 4618.46, 1703.26 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 696.931, 583.061 )
+position = Vector2( 492.824, 459.589 )
