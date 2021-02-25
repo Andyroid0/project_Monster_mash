@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/Scripts/Player/Player_system.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Sprites/PlaceHolders/char.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Sprites/PlaceHolders/char_2.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Sprites/Lights/Circle_withFlare.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Scenes/Health_bar.tscn" type="PackedScene" id=4]
 

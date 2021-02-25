@@ -456,6 +456,7 @@ shadow_gradient_length = 20.0
 [node name="House_wall" type="StaticBody2D" parent="Environment" groups=[
 "house_wall",
 ]]
+visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/House_wall" groups=[
 "house_poly",
@@ -463,4 +464,4 @@ shadow_gradient_length = 20.0
 polygon = PoolVector2Array( 1093.66, 755.548, 1091.83, 684.902, 4625.71, 1634.66, 4618.46, 1703.26 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 492.824, 459.589 )
+position = Vector2( 412.66, 503.243 )
