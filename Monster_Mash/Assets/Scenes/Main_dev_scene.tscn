@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Assets/Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Sprites/Lights/Circle_withFlare.png" type="Texture" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://Assets/Sprites/Slime/splat2_iso.png" type="Texture" id=22]
 [ext_resource path="res://Assets/Sprites/Slime/splat_Lwall.png" type="Texture" id=23]
 [ext_resource path="res://Assets/Sprites/Trees/ghosty_tree.png" type="Texture" id=24]
+[ext_resource path="res://Assets/Sprites/BGs/star_bert.png" type="Texture" id=25]
 
 [sub_resource type="OccluderPolygon2D" id=1]
 polygon = PoolVector2Array( -284.969, -536.291, -278.295, -515.156, -236.025, -498.471, -182.631, -496.246, -144.811, -502.92, -124.788, -519.605, -128.125, -544.077, -157.047, -561.875, -217.114, -567.437, -271.62, -556.314 )
@@ -35,6 +36,11 @@ modulate = Color( 0.352941, 0.360784, 0.443137, 1 )
 position = Vector2( 1446.2, 1055.77 )
 scale = Vector2( 3, 2 )
 texture = ExtResource( 14 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 317, 206 )
+scale = Vector2( 1.18854, 1.25185 )
+texture = ExtResource( 25 )
 
 [node name="Environment" type="Node2D" parent="."]
 modulate = Color( 0.345098, 0.305882, 1, 1 )
@@ -456,7 +462,6 @@ shadow_gradient_length = 20.0
 [node name="House_wall" type="StaticBody2D" parent="Environment" groups=[
 "house_wall",
 ]]
-visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Environment/House_wall" groups=[
 "house_poly",
